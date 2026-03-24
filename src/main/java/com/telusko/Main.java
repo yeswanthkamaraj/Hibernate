@@ -24,7 +24,8 @@ public class Main {
 
         // Alien a5= session.find(Alien.class,103);
         // System.out.println(a5);
-        session.merge(a1);
+        Alien a5=session.find(Alien.class,104);
+        session.remove(a5);
         transaction.commit();
         session.close();
         factory.close();
